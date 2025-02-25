@@ -6,7 +6,6 @@ This guide explains how to configure your Node.js webhook alert as a persistent 
 - Node.js (v14+) and npm installed
 - Git (optional, for repository cloning)
 - Basic terminal familiarity
-- Project files deployed to your server
 
 ## Step 1: Install Project Dependencies
 1. Clone repository (if applicable):
