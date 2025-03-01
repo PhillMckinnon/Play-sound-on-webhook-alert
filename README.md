@@ -1,7 +1,6 @@
 # Webhook Sound Alert System
 
 This project is a Node.js application that listens for incoming webhook requests and plays a corresponding `.wav` sound file when a webhook is received. It is designed to be a simple and customizable alert system that can be integrated with various services that support webhooks.
-![Untitled](https://github.com/user-attachments/assets/25ee0627-559d-4b26-893f-7f85dd188ad8)
 
 ## Features
 - Listens for webhook requests on multiple endpoints (`/webhook`, `/webhook1`, `/webhook2`, etc.).
