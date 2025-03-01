@@ -12,6 +12,6 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.2",
-    "node-wav-player": "^1.0.0"
+    "sound-play": "^1.1.0"
   }
 }
