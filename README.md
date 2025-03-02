@@ -54,18 +54,38 @@ For instructions on setting up the application to run automatically on boot usin
 
 ## Usage
 Once the application is running, you can send POST requests to the following endpoints to trigger sound alerts:
-- `/webhook` → Plays `alert.wav`
-- `/webhook1` → Plays `alert1.wav`
-- `/webhook2` → Plays `alert2.wav`
-- `/webhook3` → Plays `alert3.wav`
-- `/webhook4` → Plays `alert4.wav`
+- `/webhook` → Plays `success.wav/error.wav`
+- `/webhook1` → Plays `success1.wav/error1.wav`
+- `/webhook2` → Plays `success2.wav/error2.wav`
+- `/webhook3` → Plays `success3.wav/error3.wav`
+- `/webhook4` → Plays `success4.wav/error4.wav`
 
-Example using `curl`:
+My custom body for Uptime Kuma:
+![notification_settings](https://github.com/user-attachments/assets/91098122-e543-4e6b-8902-e54d8476837d)
+
 ```bash
-curl -X POST http://localhost:3000/webhook -H "Content-Type: application/json" -d '{"message": "Test alert"}'
+CUSTOM BODY
+-----------
+{
+  "heartbeat": {
+    "status": "{{ heartbeatJSON.status }}",
+    "msg": "{{ heartbeatJSON.msg }}",
+    "time": "{{ heartbeatJSON.time }}"
+  },
+  "monitor": {
+    "name": "{{ monitorJSON.name }}",
+    "url": "{{ monitorJSON.url }}"
+  },
+  "msg": "{{ msg }}"
+}
+
+ADDITIONAL HEADERS
+------------------
+{
+"Content-Type": "application/json"
+}
 ```
 
----
 
 ## Customization
 - Add more webhook endpoints by duplicating the existing route handlers and updating the `.wav` file paths.
