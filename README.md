@@ -11,7 +11,7 @@ This project is a Node.js application that listens for incoming webhook requests
 ## Prerequisites
 - Node.js installed on your system.
 - NPM (Node Package Manager) installed.
-- `.wav` sound files placed in the project directory (e.g., `alert.wav`, `alert1.wav`, etc.).
+- `.wav` sound files placed in the project directory (e.g., `success1.wav`, `error1.wav`, etc.).
 
 ---
 
