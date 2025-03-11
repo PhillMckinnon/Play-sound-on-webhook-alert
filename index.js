@@ -33,7 +33,7 @@ app.post('/webhook1', (req, res) => {
     const payload = req.body;
     const status_check = Number(payload.heartbeat.status);
     console.log(`Status: ${payload.heartbeat.status}`);
-    const soundFile = status_check === 0 ? 'error.wav' : 'success.wav';
+    const soundFile = status_check === 0 ? 'error1.wav' : 'success1.wav';
     const soundPath = path.join(__dirname, soundFile);
 
     console.log(`Attempting to play: ${soundPath}`);
@@ -53,7 +53,7 @@ app.post('/webhook2', (req, res) => {
     const payload = req.body;
     const status_check = Number(payload.heartbeat.status);
     console.log(`Status: ${payload.heartbeat.status}`);
-    const soundFile = status_check === 0 ? 'error.wav' : 'success.wav';
+    const soundFile = status_check === 0 ? 'error2.wav' : 'success2.wav';
     const soundPath = path.join(__dirname, soundFile);
 
     console.log(`Attempting to play: ${soundPath}`);
@@ -73,7 +73,7 @@ app.post('/webhook3', (req, res) => {
     const payload = req.body;
     const status_check = Number(payload.heartbeat.status);
     console.log(`Status: ${payload.heartbeat.status}`);
-    const soundFile = status_check === 0 ? 'error.wav' : 'success.wav';
+    const soundFile = status_check === 0 ? 'error3.wav' : 'success3.wav';
     const soundPath = path.join(__dirname, soundFile);
 
     console.log(`Attempting to play: ${soundPath}`);
@@ -93,7 +93,7 @@ app.post('/webhook4', (req, res) => {
     const payload = req.body;
     const status_check = Number(payload.heartbeat.status);
     console.log(`Status: ${payload.heartbeat.status}`);
-    const soundFile = status_check === 0 ? 'error.wav' : 'success.wav';
+    const soundFile = status_check === 0 ? 'error4.wav' : 'success4.wav';
     const soundPath = path.join(__dirname, soundFile);
 
     console.log(`Attempting to play: ${soundPath}`);
