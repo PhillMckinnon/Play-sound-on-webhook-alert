@@ -1,7 +1,7 @@
 # Webhook Sound Alert System
 ![Node.js](https://camo.githubusercontent.com/5efede1ede485921a068d065e72eae3446b1d4f9c8aba580ab290b060e1d436a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d3333393933333f7374796c653d666f722d7468652d6261646765266c6f676f3d6e6f64652e6a73266c6f676f436f6c6f723d7768697465) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![ExpressJS](https://camo.githubusercontent.com/9789aea7953b74289df6760a71e717321e750032579075e89744c592f46461aa/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457870726573732e6a732d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d65787072657373266c6f676f436f6c6f723d7768697465)
 
-This project is a Node.js application that listens for incoming webhook requests and plays a corresponding `.wav` sound file when a webhook is received. It is designed to be a simple and customizable alert system that can be integrated with various services that support webhooks.
+This project is a Node.js application that listens for incoming webhook requests and plays a corresponding `.wav` sound file when a webhook is received. It is designed to be a simple and customizable alert system that can be integrated with various services that support webhooks, made it for my own personal use with ![Uptime Kuma](https://github.com/louislam/uptime-kuma).
 
 ## Features
 - Listens for webhook requests on multiple endpoints (`/webhook`, `/webhook1`, `/webhook2`, etc.).
